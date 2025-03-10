@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ClockUISpeedTester.StartPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White">
+
+    <VerticalStackLayout Margin="16,24,16,24" Spacing="24">
+
+        <Label
+            FontSize="Header"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Text="Navigation Page Testing"
+            TextColor="Black" />
+
+        <Button
+            BackgroundColor="CornflowerBlue"
+            Clicked="Button_Clicked"
+            CornerRadius="8"
+            FontSize="Body"
+            HeightRequest="60"
+            HorizontalOptions="Center"
+            Text="Load Pin Page"
+            TextColor="White"
+            VerticalOptions="Center"
+            WidthRequest="200" />
+
+        <Button
+            BackgroundColor="CornflowerBlue"
+            Clicked="Button_Clicked_1"
+            CornerRadius="8"
+            FontSize="Body"
+            HeightRequest="60"
+            HorizontalOptions="Center"
+            Text="Flat Pin Page"
+            TextColor="White"
+            VerticalOptions="Center"
+            WidthRequest="200" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

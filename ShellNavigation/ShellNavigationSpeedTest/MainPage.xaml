@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellNavigationSpeedTest.MainPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="True"
+Shell.BackgroundColor="White"
+Shell.TabBarBackgroundColor="White"
+Shell.TabBarTitleColor="Black"
+Shell.TitleColor="Black"
+             Shell.ForegroundColor="Black">
+
+    <VerticalStackLayout Spacing="24" Margin="16,24,16,24">
+
+        <Label Text="Navigation Page Testing" FontSize="Header" TextColor="Black" 
+        HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+        <Button Text="Load Pin Page" 
+ HorizontalOptions="Center" 
+ VerticalOptions="Center"
+ Clicked="Button_Clicked"
+ WidthRequest="200"
+ HeightRequest="60"
+ CornerRadius="8"
+ BackgroundColor="CornflowerBlue"
+ TextColor="White"
+ FontSize="Body"/>
+
+        <Button Text="Flat Pin Page" 
+     HorizontalOptions="Center" 
+     VerticalOptions="Center"
+     Clicked="Button_Clicked_1"
+     WidthRequest="200"
+     HeightRequest="60"
+     CornerRadius="8"
+     BackgroundColor="CornflowerBlue"
+     TextColor="White"
+     FontSize="Body"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

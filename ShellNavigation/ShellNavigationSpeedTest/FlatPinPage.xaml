@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellNavigationSpeedTest.FlatPinPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="True"
+Shell.BackgroundColor="White"
+Shell.TabBarBackgroundColor="White"
+Shell.TabBarTitleColor="Black"
+Shell.TitleColor="Black"
+             Shell.ForegroundColor="Black"
+             Title="FlatPinPage">
+
+    <Grid RowDefinitions="175,*">
+
+        <Entry FontSize="30"
+           Grid.Row="0"
+           HorizontalOptions="Center"
+           IsPassword="True"
+           TextColor="Black"
+           VerticalOptions="Center" 
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center" />
+
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*" RowSpacing="0" ColumnSpacing="0" Grid.Row="1">
+            <!--First Row-->
+            <Button Grid.Row="0" Grid.Column="0" Text="1" FontSize="55" HorizontalOptions="End" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="2" FontSize="55" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="0" Grid.Column="2" Text="3" FontSize="55" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+
+            <!--Second Row-->
+            <Button Grid.Row="1" Grid.Column="0" Text="4" FontSize="55" HorizontalOptions="End" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="5" FontSize="55" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="6" FontSize="55" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+
+            <!--Third Row-->
+            <Button Grid.Row="2" Grid.Column="0" Text="7" FontSize="55" HorizontalOptions="End" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="8" FontSize="55" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="9" FontSize="55" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+
+            <!--Fourth Row-->
+            <Button Grid.Row="3" Grid.Column="0" Text="D" FontSize="55" HorizontalOptions="End" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="0" FontSize="55" HorizontalOptions="Center" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="E" FontSize="55" HorizontalOptions="Start" BackgroundColor="Transparent" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" HeightRequest="125" WidthRequest="125" CornerRadius="63"/>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

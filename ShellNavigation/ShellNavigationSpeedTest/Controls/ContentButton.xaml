@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<controls:ExpandedContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                              xmlns:controls="clr-namespace:ShellNavigationSpeedTest.Controls"
+                              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              x:Class="ShellNavigationSpeedTest.Controls.ContentButton">
+    
+        <Border x:Name="InnerBorder"
+                HeightRequest="125" 
+                WidthRequest="125"
+                Stroke="DarkGray"
+                StrokeThickness="1"
+                BackgroundColor="Transparent">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="62.5" />
+            </Border.StrokeShape>
+
+            <Grid BackgroundColor="Transparent">
+
+                <!--General Content for when you need more than a Label or Image-->
+                <ContentView x:Name="SubContentView" BackgroundColor="Transparent" Grid.Row="0"/>
+
+                <!--Stack Layout holding Image, Label, and Selector Row-->
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0">
+                <!--Image-->
+                <Image x:Name="InnerImage" IsVisible="False"
+                           WidthRequest="65"
+                           HeightRequest="65"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           BackgroundColor="Transparent">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior x:Name="IconTintColor" TintColor="DarkGray"/>
+                    </Image.Behaviors>
+                </Image>
+
+                <!--Text - Style is bound, but other properties are set from code behind to maintain hierarchial order-->
+                <Label x:Name="InnerLabel"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           Text="0"
+                           FontSize="55"
+                           TextColor="DarkGray"/>
+
+                <!--Bottom Selector Row, Used for Nav Bar-->
+                <Grid HeightRequest="4" IsVisible="False">
+                    <Ellipse WidthRequest="4" HeightRequest="4" HorizontalOptions="Center" 
+                                 IsVisible="False"
+                                 BackgroundColor="CornflowerBlue"/>
+                </Grid>
+            </VerticalStackLayout>
+
+            <!--Busy Indicator-->
+                <Image Source="spinner.png" HeightRequest="45" WidthRequest="45" x:Name="SpinnerImage"
+                       HorizontalOptions="Center" VerticalOptions="Center"
+                       IsVisible="False"/>
+
+                <!--Primary Button For most clicks-->
+                <Button
+                    x:Name="PrimaryButton"
+                    BackgroundColor="Transparent" Grid.Row="0"/>
+
+                <!--Disabled button for Validation Clicks-->
+                <Button
+                    x:Name="DisabledButton"
+                    IsVisible="False"
+                    BackgroundColor="Transparent" Grid.Row="0"/>
+
+            </Grid>
+        </Border>
+    
+</controls:ExpandedContentView>

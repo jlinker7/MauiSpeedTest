@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ShellNavigationSpeedTest.PinPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ShellNavigationSpeedTest.Controls"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Title="PinPage"
+    BackgroundColor="White"
+    Shell.BackgroundColor="White"
+    Shell.ForegroundColor="Black"
+    Shell.NavBarIsVisible="True"
+    Shell.TabBarBackgroundColor="White"
+    Shell.TabBarTitleColor="Black"
+    Shell.TitleColor="Black">
+
+    <Grid RowDefinitions="175,*">
+
+        <Entry
+            Grid.Row="0"
+            FontSize="30"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            IsPassword="True"
+            TextColor="Black"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,*,*"
+            ColumnSpacing="0"
+            RowDefinitions="*,*,*,*"
+            RowSpacing="0">
+            <!--  First Row  -->
+            <controls:ContentButton
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalOptions="End" />
+            <controls:ContentButton
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="Center" />
+            <controls:ContentButton
+                Grid.Row="0"
+                Grid.Column="2"
+                HorizontalOptions="Start" />
+
+            <!--  Second Row  -->
+            <controls:ContentButton
+                Grid.Row="1"
+                Grid.Column="0"
+                HorizontalOptions="End" />
+            <controls:ContentButton
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Center" />
+            <controls:ContentButton
+                Grid.Row="1"
+                Grid.Column="2"
+                HorizontalOptions="Start" />
+
+            <!--  Third Row  -->
+            <controls:ContentButton
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalOptions="End" />
+            <controls:ContentButton
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalOptions="Center" />
+            <controls:ContentButton
+                Grid.Row="2"
+                Grid.Column="2"
+                HorizontalOptions="Start" />
+
+            <!--  Fourth Row  -->
+            <controls:ContentButton
+                Grid.Row="3"
+                Grid.Column="0"
+                HorizontalOptions="End" />
+            <controls:ContentButton
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Center" />
+            <controls:ContentButton
+                Grid.Row="3"
+                Grid.Column="2"
+                HorizontalOptions="Start" />
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

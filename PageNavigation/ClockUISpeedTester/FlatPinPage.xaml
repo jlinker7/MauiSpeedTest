@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ClockUISpeedTester.FlatPinPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlatPinPage">
+
+    <Grid RowDefinitions="175,*">
+
+        <Entry
+            Grid.Row="0"
+            FontSize="30"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            IsPassword="True"
+            TextColor="Black"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center" />
+
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,*,*"
+            ColumnSpacing="0"
+            RowDefinitions="*,*,*,*"
+            RowSpacing="0">
+            <!--  First Row  -->
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="End"
+                Text="1"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Center"
+                Text="2"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Start"
+                Text="3"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+
+            <!--  Second Row  -->
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="End"
+                Text="4"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Center"
+                Text="5"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Start"
+                Text="6"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+
+            <!--  Third Row  -->
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="End"
+                Text="7"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Center"
+                Text="8"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Start"
+                Text="9"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+
+            <!--  Fourth Row  -->
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="End"
+                Text="D"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Center"
+                Text="0"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                BorderColor="DarkGray"
+                BorderWidth="1"
+                CornerRadius="63"
+                FontSize="55"
+                HeightRequest="125"
+                HorizontalOptions="Start"
+                Text="E"
+                TextColor="DarkGray"
+                WidthRequest="125" />
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

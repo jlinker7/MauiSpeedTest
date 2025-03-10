@@ -1,0 +1,10 @@
+﻿namespace ShellNavigationSpeedTest
+{
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+    }
+}

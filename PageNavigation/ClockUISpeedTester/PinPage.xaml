@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:controls="clr-namespace:ClockUISpeedTester.Controls"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClockUISpeedTester.PinPage"
+             Title="PinPage" BackgroundColor="White">
+
+    <Grid RowDefinitions="175,*">
+
+        <Entry FontSize="30"
+               Grid.Row="0"
+               HorizontalOptions="Center"
+               IsPassword="True"
+               TextColor="Black"
+               VerticalOptions="Center" 
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center" />
+
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*" RowSpacing="0" ColumnSpacing="0" Grid.Row="1">
+            <!--First Row-->
+            <controls:ContentButton Grid.Row="0" Grid.Column="0" HorizontalOptions="End"/>
+            <controls:ContentButton Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"/>
+            <controls:ContentButton Grid.Row="0" Grid.Column="2" HorizontalOptions="Start"/>
+
+            <!--Second Row-->
+            <controls:ContentButton Grid.Row="1" Grid.Column="0" HorizontalOptions="End"/>
+            <controls:ContentButton Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+            <controls:ContentButton Grid.Row="1" Grid.Column="2" HorizontalOptions="Start"/>
+
+            <!--Third Row-->
+            <controls:ContentButton Grid.Row="2" Grid.Column="0" HorizontalOptions="End"/>
+            <controls:ContentButton Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+            <controls:ContentButton Grid.Row="2" Grid.Column="2" HorizontalOptions="Start"/>
+
+            <!--Fourth Row-->
+            <controls:ContentButton Grid.Row="3" Grid.Column="0" HorizontalOptions="End"/>
+            <controls:ContentButton Grid.Row="3" Grid.Column="1" HorizontalOptions="Center"/>
+            <controls:ContentButton Grid.Row="3" Grid.Column="2" HorizontalOptions="Start"/>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
