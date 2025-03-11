@@ -3,8 +3,9 @@
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
     <ActiveDebugFramework>net8.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>HeroFun PCPROX (Android 7.1 - API 25)</ActiveDebugProfile>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <ActiveDebugProfile>Tablet 420-DPI 7.4in - API 25 (1) (Android 7.1 - API 25)</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <DefaultDevice>tablet_420-dpi_7_4in_-_api_25_1</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="Controls\ContentButton.xaml">
